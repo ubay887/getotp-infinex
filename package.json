@@ -1,0 +1,38 @@
+{
+  "name": "getotp-infinex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build  -o build/lib ./index.js && pkg --target node18-win-x64 -o build/MY-API.exe ./build/lib/index.js",
+    "nexe": "nexe -i obfuscated_index.js --resource obfuscated_helper.js -o dist/my_app.exe --build",
+    "hidden": "javascript-obfuscator index.js --output obfuscated_index.js && javascript-obfuscator helper.js --output obfuscated_helper.js"
+  },
+  "type": "module",
+  "author": "xfkrahmad",
+  "license": "ISC",
+  "pkg": {
+    "scripts": "obfuscated_index.js",
+    "assets": ["config.json", "obfuscated_helper.js"],
+    "outputPath" : "test"
+  },
+  "dependencies": {
+    "@colors/colors": "^1.5.0",
+    "@faker-js/faker": "^7.6.0",
+    "axios": "^1.4.0",
+    "clipboardy": "^3.0.0",
+    "copy-to-clipboard": "^3.3.3",
+    "delay": "^5.0.0",
+    "fs": "^0.0.1-security",
+    "he": "^1.2.0",
+    "node-fetch": "^3.3.1",
+    "playwright": "^1.36.1",
+    "prompt-sync": "^4.2.0",
+    "puppeteer": "^20.9.0"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.0.2"
+  }
+}
