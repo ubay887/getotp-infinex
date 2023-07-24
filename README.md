@@ -22,9 +22,10 @@
 4. open your website with your refferal link
 5. paste the email to the form
 6. solving the captcha
-7. wait for the apps verified the otp that sent
-8. if there was an otp received on the email, it gonna be automatically verified ( it will check 10 times with a delay of 3second )
-9. if you want to repeat, just press y
-10. done !
+7. wait for the app to verify the otp
+8. if any otp received in email, it will be verified automatically (it will check 10 times with 3 sec delay)
+9. the email will be save on result.txt
+10. if you want to repeat, just press y
+11. done !
 
 
