@@ -1,5 +1,7 @@
 # Get OTP and Verif The Email
 
+## Powered by NodeJs | 1secmail 
+
 ## Features
 
 - **Generate Email**
@@ -25,4 +27,4 @@
 9. if you want to repeat, just press y
 10. done !
 
-## Powered by NodeJs | 1secmail 
+
